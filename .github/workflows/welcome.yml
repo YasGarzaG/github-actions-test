@@ -1,0 +1,12 @@
+name: "Welcome workflow"
+on:
+  pull_request:
+    types: [opened]
+permissions:
+  pull-requests: write
+jobs:
+  build:
+    name: "Hello world action"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
