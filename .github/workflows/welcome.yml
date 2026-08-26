@@ -5,8 +5,6 @@ on:
 permissions:
   pull-requests: write
 jobs:
-  build:
-    name: "Hello world action"
+  welcome:
+    name: "Post welcome comment"
     runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
